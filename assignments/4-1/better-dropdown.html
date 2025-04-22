@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .menu a,
+        .dropdown {
+            float: left;
+        }
+        .menu a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .dropdown {
+            position: relative; /* Make sure the dropdown-content is positioned relative to this */
+        }
+        .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 20px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            cursor: pointer;
+            position: relative;
+        }
+        .dropbtn::after {
+            content: '▼';
+            margin-left: 8px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .dropdown:hover .dropbtn::after {
+            transform: rotate(-90deg); /* points right */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            top: 100%; /* Position below the button */
+            left: 0;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#page1">Page 1</a>
+                <a href="#page2">Page 2</a>
+                <a href="#page3">Page 3</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
