@@ -19,7 +19,15 @@
               <a href="pages/ingameplay.html">In Game Play</a>
               <a href="pages/booksession.html">Book Session</a>
             </div>
-          </nav>
+        </nav>
+        <script>
+          function toggleMenu() {
+            // https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+            // https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
+            document.getElementById("menu").classList.toggle("show");
+            document.getElementsByTagName("span")[0].classList.toggle("rotate");
+          }
+        </script>
     </header>
     <h1>1-on-1 Soccer Goalie Training</h1>
     <p>Welcome to Maxx's goalie training program! Whether you're a beginner or an experienced goalkeeper looking to sharpen your skills, 1-on-1 training sessions can help you develop the techniques and confidence needed to excel in the game.</p>
