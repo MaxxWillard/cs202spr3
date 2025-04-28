@@ -9,24 +9,27 @@
 <body>
     <header>
         <nav>
-            <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
             <button onclick="toggleMenu()">Menu <span>➤</span></button>
             <div class="dropdown" id="menu">
-              <!-- your home would be index.html, mine isn't because it is an example -->
-              <a href="../index.html">Home</a>
+              <<a href="../index.html">Home</a>
               <a href="../pages/Contact me.html">Contact Me</a>
               <a href="../pages/About me.html">About Me</Menu></a>
               <a href="../pages/In game play.html">In Game Play</a>
               <a href="../pages/Book session.html">Book Session</a>
             </div>
           </nav>
-          <script>
-            function toggleMenu() {
-              // https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
-              // https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
-              document.getElementById("menu").classList.toggle("show");
-              document.getElementsByTagName("span")[0].classList.toggle("rotate");
-            }
+          script>
+      function toggleMenu() {
+        let menu = document.getElementById("menu");
+        let button = document.getElementById("img");
+  
+        menu.classList.toggle("show");
+  
+        // Toggle arrow direction
+        if (menu.classList.contains("show")) {
+          button.innerHTML = "Menu &#9662;"; // Left arrow
+        } else {
+          button.innerHTML = "Menu &#9664;"; // Down arrow
           </script>
     </header>
     <h1>1-on-1 Soccer Goalie Training</h1>
