@@ -6,6 +6,15 @@
     <title>Maxx's Home Page - 1-on-1 Soccer Goalie Training</title>
     <link rel="stylesheet" href="styles/base.css">
 </head>
+<nav>
+    <button onclick="toggleMenu()">Menu <span>➤</span></button>
+    <div class="dropdown" id="menu">
+        <a href="../index.html">Home</a>
+        <a href="../pages/Contact me.html">Contact Me</a>
+        <a href="../pages/About me.html">About Me</Menu></a>
+        <a href="../pages/In game play.html">In Game Play</a>
+        <a href="../pages/Book session.html">Book Session</a>
+    </div>
 </nav>
 <script>
   function toggleMenu() {
@@ -13,8 +22,7 @@
     // https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
     document.getElementById("menu").classList.toggle("show");
     document.getElementsByTagName("span")[0].classList.toggle("rotate");
-  }
-    
+    }   
 </script>
     </header>
     <h1>1-on-1 Soccer Goalie Training</h1>
