@@ -6,33 +6,16 @@
     <title>Maxx's Home Page - 1-on-1 Soccer Goalie Training</title>
     <link rel="stylesheet" href="styles/base.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <button onclick="toggleMenu()">Menu <span>➤</span></button>
-            <div class="dropdown" id="menu">
-              <<a href="../index.html">Home</a>
-              <a href="../pages/Contact me.html">Contact Me</a>
-              <a href="../pages/About me.html">About Me</Menu></a>
-              <a href="../pages/In game play.html">In Game Play</a>
-              <a href="../pages/Book session.html">Book Session</a>
-            </div>
-          </nav>
-          <script>
-      function toggleMenu() {
-        let menu = document.getElementById("menu");
-        let button = document.getElementById("img");
-  
-        menu.classList.toggle("show");
-  
-        // Toggle arrow direction
-        if (menu.classList.contains("show")) {
-          button.innerHTML = "Menu &#9662;"; // Left arrow
-        } else {
-          button.innerHTML = "Menu &#9664;"; // Down arrow
-        }
-    }
-          </script>
+</nav>
+<script>
+  function toggleMenu() {
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+    // https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
+    document.getElementById("menu").classList.toggle("show");
+    document.getElementsByTagName("span")[0].classList.toggle("rotate");
+  }
+    
+</script>
     </header>
     <h1>1-on-1 Soccer Goalie Training</h1>
     <p>Welcome to Maxx's goalie training program! Whether you're a beginner or an experienced goalkeeper looking to sharpen your skills, 1-on-1 training sessions can help you develop the techniques and confidence needed to excel in the game.</p>
